@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="resizeImage()"> Image Resizer </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button secondary (click)="CaptureImage()">Capture Image</button>
+  <img src="{{image}}"/>
+  <img src="{{image1}}"/>
+
+  <br/>
+  <button ion-button (click)="selectFile()">Choose a File</button>
+
+  <ion-fab bottom right>
+      <button ion-fab mini><ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)="facebook()"><ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon></button>
+        <button ion-fab><ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon></button>
+        <button ion-fab><ion-icon ios="logo-youtube" md="logo-youtube"></ion-icon></button>
+        <button ion-fab><ion-icon ios="logo-vimeo" md="logo-vimeo"></ion-icon></button>
+        <button ion-fab (click)="googleplus()"><ion-icon ios="logo-googleplus" md="logo-googleplus"></ion-icon></button>
+      </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

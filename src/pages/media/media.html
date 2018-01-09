@@ -1,0 +1,33 @@
+<!--
+  Generated template for the MediaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Media</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h5>Using Streaming Media: </h5><br/>
+  <button ion-button color="secondary" (click)="playVideo()">Play Video</button>
+  <br/>
+  <button ion-button color="secondary" (click)="playAudio()">Play Audio</button>
+  <br/>
+  <!-- <button ion-button (click)="pauseAudio()">Play Audio</button>
+  <br/> 
+  <button ion-button (click)="resumeAudio()">Resume Audio</button>
+  <br/> -->
+  <button ion-button color="danger" (click)="stopAudio()">Stop Audio</button>
+  <br/> <br/>
+  <h5>Using Video Player: </h5><br/>
+  <button ion-button color="secondary" (click)="playVideoUsingVP()">Play Video</button>
+  <br/>
+</ion-content>
